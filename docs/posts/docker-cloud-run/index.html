@@ -107,7 +107,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -181,7 +181,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#hosting-docker-containers-with-cloud-run" id="toc-hosting-docker-containers-with-cloud-run" class="nav-link" data-scroll-target="#hosting-docker-containers-with-cloud-run">Hosting Docker Containers with Cloud Run</a>
+  <ul>
+  <li><a href="#continuous-deployment-via-github" id="toc-continuous-deployment-via-github" class="nav-link" data-scroll-target="#continuous-deployment-via-github">Continuous Deployment via Github</a></li>
+  <li><a href="#manual-upload-to-artifact-registry" id="toc-manual-upload-to-artifact-registry" class="nav-link" data-scroll-target="#manual-upload-to-artifact-registry">Manual upload to Artifact Registry</a>
+  <ul class="collapse">
+  <li><a href="#setting-up-google-cloud-cli" id="toc-setting-up-google-cloud-cli" class="nav-link" data-scroll-target="#setting-up-google-cloud-cli">Setting up Google Cloud CLI</a></li>
+  <li><a href="#uploading-the-docker-image-to-artifact-registry" id="toc-uploading-the-docker-image-to-artifact-registry" class="nav-link" data-scroll-target="#uploading-the-docker-image-to-artifact-registry">Uploading the Docker image to Artifact Registry</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#oauth-with-identity-aware-proxy" id="toc-oauth-with-identity-aware-proxy" class="nav-link" data-scroll-target="#oauth-with-identity-aware-proxy">OAuth with Identity-Aware Proxy</a>
+  <ul>
+  <li><a href="#enable-iap-api" id="toc-enable-iap-api" class="nav-link" data-scroll-target="#enable-iap-api">Enable IAP API</a></li>
+  <li><a href="#create-a-load-balancer" id="toc-create-a-load-balancer" class="nav-link" data-scroll-target="#create-a-load-balancer">Create a Load Balancer</a></li>
+  <li><a href="#enable-iap-for-load-balancer" id="toc-enable-iap-for-load-balancer" class="nav-link" data-scroll-target="#enable-iap-for-load-balancer">Enable IAP for Load Balancer</a>
+  <ul class="collapse">
+  <li><a href="#the-waiting-game" id="toc-the-waiting-game" class="nav-link" data-scroll-target="#the-waiting-game">The Waiting Game</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
@@ -192,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular.</p>
-<p><img src="assets/thumbnail.png" class="img-fluid"></p>
+<p><img src="assets/thumbnail.png" class="img-fluid">{.}</p>
 </section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>

@@ -11,14 +11,14 @@
     "href": "posts/docker-cloud-run/index.html",
     "title": "Cloud Run Docker with OAuth",
     "section": "",
-    "text": "A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular."
+    "text": "A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular.\n{.}"
   },
   {
     "objectID": "posts/docker-cloud-run/index.html#overview",
     "href": "posts/docker-cloud-run/index.html#overview",
     "title": "Cloud Run Docker with OAuth",
     "section": "",
-    "text": "A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular."
+    "text": "A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular.\n{.}"
   },
   {
     "objectID": "posts/docker-cloud-run/index.html#prerequisites",
