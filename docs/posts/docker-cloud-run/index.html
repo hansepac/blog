@@ -214,8 +214,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="assets/docker_upload_options.png" class="img-fluid" style="width:80.0%"></p>
 <p>Here is a quick breakdown of the pros and cons of each:</p>
 <div class="grid column-screen-inset-shaded">
-<section id="continuous-deployment-via-github" class="level3 g-col-6">
-<h3 class="anchored" data-anchor-id="continuous-deployment-via-github">Continuous Deployment via Github</h3>
+<div class="g-col-6">
+<p><strong>Continuous Deployment via Github</strong></p>
 <p>Pros:</p>
 <ul>
 <li>With each push to a designated branch, Google Cloud will automatically deploy that latest push.</li>
@@ -227,9 +227,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Requires strict Github protocal. Accidently pushing changes to the branch that have a fatal error on the application’s end (not a docker build error) will result in a broken application for the end user</li>
 </ul>
-</section>
-<section id="manual-upload-to-artifact-registry" class="level3 g-col-6">
-<h3 class="anchored" data-anchor-id="manual-upload-to-artifact-registry">Manual upload to Artifact Registry</h3>
+</div>
+<div class="g-col-6">
+<p><strong>Manual upload to Artifact Registry</strong></p>
 <p>Pros:</p>
 <ul>
 <li>Seperates Github branch from the production-level product</li>
@@ -239,10 +239,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Each update to the product requires manual redeployment. (Obviously)</li>
 <li>Requires setting up Google Cloud CLI on a computer, linking it to your GCP.</li>
 </ul>
-</section>
 </div>
-<section id="continuous-deployment-via-github-1" class="level3">
-<h3 class="anchored" data-anchor-id="continuous-deployment-via-github-1">Continuous Deployment via Github</h3>
+</div>
+<section id="continuous-deployment-via-github" class="level3">
+<h3 class="anchored" data-anchor-id="continuous-deployment-via-github">Continuous Deployment via Github</h3>
 <div class="grid">
 <div class="g-col-6">
 <p>Navigate to Cloud Run in the Google Cloud Console</p>
@@ -260,10 +260,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="assets/run_session_affinity.png" class="img-fluid"></p>
 <p>Hit Deploy!</p>
 <p>If you aren’t adding OAuth, then you are done! Google will give you a url to access your Cloud Run service. If you own a domain and want to use a custom link, click on your Cloud run service, and look into the <em>Integrations</em> tab. There is an integration for Custom Domains.</p>
-<p>To add OAuth, move onto <strong>OAuth with Identiy-Aware Proxy</strong>.</p>
+<p>To add OAuth, move onto <a href="#oauth-with-identity-aware-proxy"><strong>OAuth with Identiy-Aware Proxy</strong></a>.</p>
 </section>
-<section id="manual-upload-to-artifact-registry-1" class="level3">
-<h3 class="anchored" data-anchor-id="manual-upload-to-artifact-registry-1">Manual upload to Artifact Registry</h3>
+<section id="manual-upload-to-artifact-registry" class="level3">
+<h3 class="anchored" data-anchor-id="manual-upload-to-artifact-registry">Manual upload to Artifact Registry</h3>
 <section id="setting-up-google-cloud-cli" class="level4">
 <h4 class="anchored" data-anchor-id="setting-up-google-cloud-cli">Setting up Google Cloud CLI</h4>
 <p>Begin by installing <a href="https://cloud.google.com/sdk/docs/install#windows">Google Cloud CLI</a></p>
@@ -314,7 +314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="running-docker-image-with-cloud-run" class="level5">
 <h5 class="anchored" data-anchor-id="running-docker-image-with-cloud-run">Running Docker image with Cloud Run</h5>
-<p>Now, navigate to Cloud Run and follow the same steps as shown in the continous deployment method, except this time we will select our image from the Artifact Registry with the “Deploy one revision from an existing container image” option.</p>
+<p>Now, navigate to Cloud Run and follow the same steps as shown in the <a href="#continuous-deployment-via-github">continous deployment method</a>, except this time we will select our image from the Artifact Registry with the “Deploy one revision from an existing container image” option.</p>
 <p>Just like in the other option, Google Cloud will create a link you can use to access your Cloud Run Service. (See Continuous Deployment section for notes on custom domains)</p>
 </section>
 </section>

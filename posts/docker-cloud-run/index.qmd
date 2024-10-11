@@ -35,7 +35,7 @@ Here is a quick breakdown of the pros and cons of each:
 
 ::: {.grid .column-screen-inset-shaded}
 ::: {.g-col-6}
-### Continuous Deployment via Github
+**Continuous Deployment via Github**
 
 Pros:
 
@@ -50,7 +50,7 @@ Cons:
 :::
 
 ::: {.g-col-6}
-### Manual upload to Artifact Registry
+**Manual upload to Artifact Registry**
 
 Pros:
 
@@ -95,7 +95,7 @@ Hit Deploy!
 
 If you aren't adding OAuth, then you are done! Google will give you a url to access your Cloud Run service. If you own a domain and want to use a custom link, click on your Cloud run service, and look into the *Integrations* tab. There is an integration for Custom Domains.
 
-To add OAuth, move onto **OAuth with Identiy-Aware Proxy**.
+To add OAuth, move onto [**OAuth with Identiy-Aware Proxy**](#oauth-with-identity-aware-proxy).
 
 
 ### Manual upload to Artifact Registry
@@ -154,7 +154,7 @@ Arguments:
 
 ##### Running Docker image with Cloud Run
 
-Now, navigate to Cloud Run and follow the same steps as shown in the continous deployment method, except this time we will select our image from the Artifact Registry with the "Deploy one revision from an existing container image" option.
+Now, navigate to Cloud Run and follow the same steps as shown in the [continous deployment method](#continuous-deployment-via-github), except this time we will select our image from the Artifact Registry with the "Deploy one revision from an existing container image" option.
 
 Just like in the other option, Google Cloud will create a link you can use to access your Cloud Run Service. (See Continuous Deployment section for notes on custom domains)
 
