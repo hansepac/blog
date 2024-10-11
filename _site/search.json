@@ -32,14 +32,14 @@
     "href": "posts/docker-cloud-run/index.html",
     "title": "Cloud Run Docker with OAuth",
     "section": "",
-    "text": "A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular.\nPrerequisites:\n\nA Google account with access to the Google Cloud Console.\nA Google Cloud Project with access to a billing account.\nA functioning dockerized streamlit application (or other application) being run on port 8080. This is Cloud Run’s default port. You may use a different port if you to change settings in Google Cloud during the Cloud Run deployment process.\n(For OAuth with Identiy-Aware Proxy) Ownership of a domain. (example.com)\n\nThroughout this tutorial, Google Cloud will state its need for certain services to be enabled. Enable them as they come."
+    "text": "A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular."
   },
   {
     "objectID": "posts/docker-cloud-run/index.html#overview",
     "href": "posts/docker-cloud-run/index.html#overview",
     "title": "Cloud Run Docker with OAuth",
     "section": "",
-    "text": "A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular.\nPrerequisites:\n\nA Google account with access to the Google Cloud Console.\nA Google Cloud Project with access to a billing account.\nA functioning dockerized streamlit application (or other application) being run on port 8080. This is Cloud Run’s default port. You may use a different port if you to change settings in Google Cloud during the Cloud Run deployment process.\n(For OAuth with Identiy-Aware Proxy) Ownership of a domain. (example.com)\n\nThroughout this tutorial, Google Cloud will state its need for certain services to be enabled. Enable them as they come."
+    "text": "A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP’s Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular."
   },
   {
     "objectID": "posts/docker-cloud-run/index.html#hosting-docker-containers-with-cloud-run",
@@ -61,5 +61,12 @@
     "title": "Cloud Run Docker with OAuth",
     "section": "Test",
     "text": "Test"
+  },
+  {
+    "objectID": "posts/docker-cloud-run/index.html#prerequisites",
+    "href": "posts/docker-cloud-run/index.html#prerequisites",
+    "title": "Cloud Run Docker with OAuth",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nA Google account with access to the Google Cloud Console.\nA Google Cloud Project with access to a billing account.\nA functioning dockerized streamlit application (or other application) being run on port 8080. This is Cloud Run’s default port. You may use a different port if you to change settings in Google Cloud during the Cloud Run deployment process.\n(For OAuth with Identiy-Aware Proxy) Ownership of a domain. (example.com)\n\nThroughout this tutorial, Google Cloud will state its need for certain services to be enabled. Enable them as they come."
   }
 ]

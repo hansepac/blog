@@ -12,7 +12,7 @@ website:
         href: https://github.com/hansepac
 format:
   html:
-    theme: pulse
+    theme: minty
     css: styles.css
 
 

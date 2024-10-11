@@ -3,7 +3,7 @@ title: "Cloud Run Docker with OAuth"
 author: "Hans Capener"
 date: "2024-10-10"
 categories: [Google Cloud Project, Hosting]
-image: thumbnail.jpg
+image: assets/thumbnail.png
 ---
 
 
@@ -11,7 +11,9 @@ image: thumbnail.jpg
 
 A guide to publishing a streamlit application in Google Cloud using a Docker container. This guide will also include steps to setup an OAuth security layer using GCP's Identity-Aware Proxy, so only individuals with a certain google email domain can access it. It should be noted that these steps will work to publish any docker container, but this guide will showcase streamlit in particular.
 
-Prerequisites:
+![](assets/thumbnail.png)
+
+## Prerequisites
 
 - A Google account with access to the Google Cloud Console.
 - A Google Cloud Project with access to a billing account.
