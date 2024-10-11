@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "Capener Consulting LLC"
+  navbar:
+    right:
+      - about.qmd
+      - icon: linkedin
+        href: https://www.linkedin.com/in/hans-capener-72a76a291/
+      - icon: github
+        href: https://github.com/hansepac
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+

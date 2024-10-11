@@ -1,0 +1,16 @@
+---
+title: "About"
+image: pfp.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/hans-capener-72a76a291/
+    - icon: github
+      text: Github
+      href: https://github.com/hansepac
+
+---
+
+Hi! I am Hans Capener, a Data Scientist and aspiring Biostatistician. I have created this blog to host the things I have learned in my experience in the world of Data Consulting and personal projects. Enjoy :)
